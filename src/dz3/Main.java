@@ -1,3 +1,5 @@
+package dz3;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,20 +16,24 @@ public class Main {
         int positiv = 0;
         int negativ = 0;
         int zero = 0;
+        int sumPos = 0;
 
         for (int item: mas) {
             if (item>0){
                 positiv++;
+                sumPos = sumPos + item;
+                //sumPos += item;
             }else if (item<0){
                 negativ++;
             }else{
                 zero++;
             }
+
         }
         System.out.println("Info");
         System.out.println("+: " + positiv);
         System.out.println("-: " + negativ);
-        System.out.println("0 :" +  zero);
+        System.out.println("0 : " +  zero);
 
 
 
